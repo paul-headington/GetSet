@@ -1,0 +1,8 @@
+{
+    "name": "paul-headington/GetSet",
+    "autoload": {
+        "psr-0" : {
+            "GetSet" : "src"
+        }
+    }
+}
