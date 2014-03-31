@@ -1,8 +1,14 @@
 {
     "name": "paul-headington/GetSet",
+    "keywords": ["getter", "setter", "trait"],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4.0"
+	},
     "autoload": {
         "psr-0" : {
-            "GetSet" : "src"
+            "DocBlockReader": "src/",
+            "GetSet" : "src/"
         }
     }
 }
