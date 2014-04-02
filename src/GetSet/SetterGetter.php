@@ -3,6 +3,14 @@
 trait SetterGetter
 {
 
+     /**
+     * Using the __set and __get method we can catch calls to set our
+      * protected properties directly and push them thru the correct 
+      * setter and getter channels which are handles via the __call
+      * method below
+     */
+    
+    
     public function __set($name, $value)
     {
         $method = "set".$name;
