@@ -3,6 +3,17 @@
 trait SetterGetter
 {
 
+    public function __set($name, $value)
+    {
+        $method = "set".$name;
+        $this->$method($value);
+    }
+
+    public function __get($name)
+    {
+        $method = "get".$name;
+        return $this->$method();
+    }
     /**
      * Lets catch all non-existing methods and
      * process if we have 'set' or 'get' prefix
