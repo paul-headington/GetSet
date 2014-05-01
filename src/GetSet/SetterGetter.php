@@ -43,7 +43,7 @@ trait SetterGetter
         // then Foo is our property name, and will make it foo
         // (lower cased first character).
         $property = substr($method, 3);
-        $property = "_".lcfirst($property);
+        $property = lcfirst($property);
 
         // If our prefix is not 'get' or 'set', then reject it.
         if ($methodPrefix != 'get' & $methodPrefix != 'set') {
